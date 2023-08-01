@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getAllowance method tests Case #3: Assert error if use invalid network name 1`] = `""net" must be one of [eth, bsc, polygon, arbitrum, avalanche, optimism]"`;
+
+exports[`getAllowance method tests Case #5: Assert error if use invalid method signature 1`] = `""net" is required"`;
+
+exports[`getAllowance method tests Case #5: Assert error if use invalid method signature 2`] = `""tokenAddress" is required"`;
+
+exports[`getAllowance method tests Case #5: Assert error if use invalid method signature 3`] = `""ownerAddress" is required"`;

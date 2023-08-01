@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getApproveTx method tests Case #1: Get approve tx swap from Ether to USDT in ETH 1`] = `
+{
+  "chainId": 1,
+  "data": "0x095ea7b30000000000000000000000001111111254eeb25477b68fb85ed929f73a960582000000000000000000000000000000000000000000000000001fffffffffffff",
+  "from": "0xaac594a9b83f892f1a4b5b8804339fc6ddb797ee",
+  "gas": "48597",
+  "gasPrice": "29568592931",
+  "nonce": 0,
+  "to": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+  "value": "0",
+}
+`;
+
+exports[`getApproveTx method tests Case #2: Assert error if use invalid method signature 1`] = `""net" is required"`;
+
+exports[`getApproveTx method tests Case #2: Assert error if use invalid method signature 2`] = `""tokenAddress" is required"`;
+
+exports[`getApproveTx method tests Case #2: Assert error if use invalid method signature 3`] = `""ownerAddress" is required"`;

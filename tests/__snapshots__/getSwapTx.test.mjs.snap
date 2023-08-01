@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getSwapTx method tests Case #1: get tx swap from Ether to USDT in ETH 1`] = `
+{
+  "chainId": 1,
+  "data": "0x0502b1c5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005af3107a4000000000000000000000000000000000000000000000000000000000000002c02f0000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000100000000000000003b6d03400d4a11d5eeaac28ec3f61d100daf4d40471f185261c0064f",
+  "from": "0xaac594a9b83f892f1a4b5b8804339fc6ddb797ee",
+  "gas": "145146",
+  "gasPrice": "18069299540",
+  "to": "0x1111111254eeb25477b68fb85ed929f73a960582",
+  "value": "100000000000000",
+}
+`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 1`] = `""net" is required"`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 2`] = `""fromTokenAddress" is required"`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 3`] = `""toTokenAddress" is required"`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 4`] = `""ownerAddress" is required"`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 5`] = `""amount" is required"`;
+
+exports[`getSwapTx method tests Case #2: Assert error if use invalid method signature 6`] = `""slippage" is required"`;
+
+exports[`getSwapTx method tests Case #3: Assert error if use invalid network name 1`] = `""net" must be one of [eth, bsc, polygon, arbitrum, avalanche, optimism]"`;
+
+exports[`getSwapTx method tests Case #5: Assert error if use invalid param "fromTokenAddress" 1`] = `""fromTokenAddress" with value "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" fails to match the required pattern: /^0x([a-zA-Z0-9]{40})$/"`;

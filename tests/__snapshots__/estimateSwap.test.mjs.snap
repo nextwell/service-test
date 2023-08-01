@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`estimateSwap method tests Case #1: Check estimate swap from Ether to USDT. 1`] = `
+{
+  "fee": {
+    "amount": "0.002927192549659643",
+    "currency": "ETH",
+  },
+  "fromTokenAmount": "1.0",
+  "toTokenAmount": "1852.87681",
+}
+`;
+
+exports[`estimateSwap method tests Case #3: Assert error if use invalid method signature 1`] = `""net" is required"`;
+
+exports[`estimateSwap method tests Case #3: Assert error if use invalid method signature 2`] = `""fromTokenAddress" is required"`;
+
+exports[`estimateSwap method tests Case #3: Assert error if use invalid method signature 3`] = `""toTokenAddress" is required"`;
+
+exports[`estimateSwap method tests Case #3: Assert error if use invalid method signature 4`] = `""amount" is required"`;
+
+exports[`estimateSwap method tests Case #4: Assert error if use invalid network name 1`] = `""net" must be one of [eth, bsc, polygon, arbitrum, avalanche, optimism]"`;
