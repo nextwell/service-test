@@ -13,8 +13,8 @@ import { patterns } from '../schemas.mjs';
  * @apiDescription Get allowance for spender
  *
  * @apiQuery {string} net Network name
- * @apiQuery {address} token_address Token contract address
- * @apiQuery {address} owner Wallet address
+ * @apiQuery {address} tokenAddress Token contract address
+ * @apiQuery {address} ownerAddress Wallet address
  *
  *
  * @apiSuccessExample Data:
