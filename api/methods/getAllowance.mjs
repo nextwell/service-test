@@ -5,6 +5,7 @@ import Wallet from '../../networking/models/Wallet.mjs';
 import { checkErrors, getNetworkParams, validateArgs } from '../helpers/index.mjs';
 import { AVAILABLE_NETS } from '../../networking/constants.mjs';
 import { patterns } from '../schemas.mjs';
+import axios from 'axios';
 
 /**
  * @api {get} /getAllowance getAllowance
@@ -24,13 +25,16 @@ import { patterns } from '../schemas.mjs';
  */
 
 export const inputSchema = joi.object({
-    net: joi.string().valid(...Object.values(AVAILABLE_NETS)).required(),
+    net: joi
+        .string()
+        .valid(...Object.values(AVAILABLE_NETS))
+        .required(),
     tokenAddress: joi.string().pattern(patterns.evmAddress).required(),
     ownerAddress: joi.string().pattern(patterns.evmAddress).required(),
 });
 
 export const outputSchema = joi.object({
-    allowance: joi.string().pattern(patterns.numeric).required()
+    allowance: joi.string().pattern(patterns.numeric).required(),
 });
 
 export default async (args) => {
@@ -38,12 +42,21 @@ export default async (args) => {
 
     try {
         validateArgs(args, inputSchema);
+        const url = 'https://api.1inch.dev/swap/v5.2/1/approve/allowance';
+        const queryParams = {
+            tokenAddress: tokenAddress,
+            walletAddress: ownerAddress,
+        };
 
-        const wallet = new Wallet({
-            ...getNetworkParams(net),
-            address: ownerAddress,
+        const result = await axios.get(url, {
+            headers: {
+                Accept: '*/*',
+                Authorization: 'Bearer vBhDqaRSvguBKXgzyrBHEdD3t1oQylVx',
+            },
+            params: queryParams,
         });
-        const allowance = await wallet.getAllowance(tokenAddress);
+
+        const allowance = result.data;
 
         return validateArgs(allowance, outputSchema);
     } catch (e) {

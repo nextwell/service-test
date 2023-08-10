@@ -19,9 +19,6 @@ export const getAllowance = (chainId, tokenAddress, walletAddress) => {
             tokenAddress,
             walletAddress,
         },
-        headers: {
-            Authorization: 'Bearer vBhDqaRSvguBKXgzyrBHEdD3t1oQylVx',
-        },
     });
 };
 
