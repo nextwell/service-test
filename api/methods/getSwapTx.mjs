@@ -13,10 +13,10 @@ import { types, patterns } from '../schemas.mjs';
  * @apiDescription Get prepared swap tx
  *
  * @apiQuery {string} net Network name
- * @apiQuery {address} from_token_address Token from contract address
- * @apiQuery {address} to_token_address Token to contract address
+ * @apiQuery {address} fromTokenAddress Token from contract address
+ * @apiQuery {address} toTokenAddress Token to contract address
  * @apiQuery {Number} amount Amount for swap
- * @apiQuery {address} owner Caller address
+ * @apiQuery {address} ownerAddress Caller address
  * @apiQuery {Number} slippage Slippage tolerance percents
  *
  *

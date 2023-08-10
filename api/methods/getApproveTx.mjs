@@ -13,8 +13,8 @@ import { types, patterns } from '../schemas.mjs';
  * @apiDescription Get prepared approve tx
  *
  * @apiQuery {string} net Network name
- * @apiQuery {address} token_address Token to approve
- * @apiQuery {address} owner Caller address
+ * @apiQuery {address} tokenAddress Token to approve
+ * @apiQuery {address} ownerAddress Caller address
  *
  *
  * @apiSuccessExample Data:

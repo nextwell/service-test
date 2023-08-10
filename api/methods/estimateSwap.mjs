@@ -13,8 +13,8 @@ import { types, patterns } from '../schemas.mjs';
  * @apiDescription Get estimate for tokens swap
  *
  * @apiQuery {string} net Network name
- * @apiQuery {address} from_token_address Token from contract address
- * @apiQuery {address} to_token_address Token to contract address
+ * @apiQuery {address} fromTokenAddress Token from contract address
+ * @apiQuery {address} toTokenAddress Token to contract address
  * @apiQuery {number} amount Amount for swap
  *
  *
