@@ -15,7 +15,7 @@ import { types, patterns } from '../schemas.mjs';
  * @apiQuery {string} net Network name
  * @apiQuery {address} fromTokenAddress Token from contract address
  * @apiQuery {address} toTokenAddress Token to contract address
- * @apiQuery {number} amount Amount for swap 345
+ * @apiQuery {number} amount AMMMMOUNT for swap 345
  *
  *
  * @apiSuccessExample Data:
