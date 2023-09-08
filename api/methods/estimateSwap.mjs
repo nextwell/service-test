@@ -7,7 +7,7 @@ import { AVAILABLE_NETS } from '../../networking/constants.mjs';
 import { types, patterns } from '../schemas.mjs';
 
 /**
- * @api {get} /estimateSwap estimateSwap
+ * @api {get} /estimateSwap estimateSwap 123
  * @apiName estimateSwap
  * @apiGroup 1inch
  * @apiDescription Get estimate for tokens swap
